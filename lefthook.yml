@@ -1,0 +1,18 @@
+colors: true
+skip_output: [meta, execution]
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bunx commitlint --edit {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    lint_staged:
+      run: bunx lint-staged
+
+post-merge:
+  commands:
+    bun_install_on_lock_change:
+      run: bunx git-pull-run --pattern "bun.lock" --command "bun install"

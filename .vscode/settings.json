@@ -1,0 +1,27 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "always",
+    "source.fixAll.ts": "always",
+    "source.organizeImports.biome": "always",
+    "source.removeUnusedImports": "always"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.next": true,
+    "**/next-env.d.ts": true,
+    "**/*.tsbuildinfo": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "[javascript][typescript][typescriptreact][json][jsonc][css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
